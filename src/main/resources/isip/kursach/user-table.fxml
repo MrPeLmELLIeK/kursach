@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isip.kursach.UsersTableController">
+    <children>
+        <Button fx:id="CategotyTable" layoutX="574.0" layoutY="13.0" mnemonicParsing="false" onAction="#TableCategory" prefHeight="26.0" text="Категории" textAlignment="CENTER" wrapText="true" />
+        <TableView fx:id="UsersTable" layoutX="20.0" layoutY="100.0" prefHeight="234.0" prefWidth="827.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="30.4000244140625" text="ID:" />
+                <TableColumn fx:id="login" prefWidth="104.0" text="login" />
+                <TableColumn fx:id="email" prefWidth="99.20001220703125" text="email" />
+                <TableColumn fx:id="password" prefWidth="108.79998779296875" text="password" />
+            <TableColumn fx:id="number_phone" prefWidth="133.60003662109375" text="phone" />
+            <TableColumn fx:id="address" prefWidth="116.79998779296875" text="address" />
+            <TableColumn fx:id="full_name" prefWidth="108.800048828125" text="full_name" />
+            <TableColumn fx:id="birthday" prefWidth="108.800048828125" text="birthday" />
+            </columns>
+        </TableView>
+        <Label layoutX="20.0" layoutY="73.0" prefHeight="26.0" prefWidth="151.0" text="Таблица &quot;Админы&quot;" />
+        <Button fx:id="UpdateTable" layoutX="20.0" layoutY="342.0" mnemonicParsing="false" onAction="#UpdateTable" prefHeight="26.0" prefWidth="122.0" text="Обновить таблицу" textAlignment="CENTER" wrapText="true" />
+        <TextField fx:id="idFields" layoutX="213.0" layoutY="343.0" prefHeight="25.0" prefWidth="74.0" />
+        <Label layoutX="191.0" layoutY="347.0" text="ID:" />
+        <Label layoutX="309.0" layoutY="346.0" text="login:" />
+        <TextField fx:id="loginField" layoutX="347.0" layoutY="342.0" prefHeight="25.0" prefWidth="325.0" />
+        <Button fx:id="insertData" layoutX="20.0" layoutY="456.0" mnemonicParsing="false" onAction="#insertData" prefHeight="25.0" prefWidth="74.0" text="Добавить" />
+        <Button fx:id="deleteData" layoutX="191.0" layoutY="456.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="25.0" prefWidth="74.0" text="Удалить" />
+        <Button fx:id="updateData" layoutX="105.0" layoutY="456.0" mnemonicParsing="false" onAction="#updateData" prefHeight="25.0" prefWidth="74.0" text="Изменить" />
+        <Button fx:id="ordersTab" layoutX="574.0" layoutY="47.0" mnemonicParsing="false" onAction="#OrdersTab" prefHeight="26.0" prefWidth="73.0" text="Заказы" />
+        <Button fx:id="AdminsTab" layoutX="661.0" layoutY="47.0" mnemonicParsing="false" onAction="#AdminsTable" prefHeight="26.0" prefWidth="66.0" text="Админы" textAlignment="CENTER" />
+        <Button fx:id="ProductsTab" layoutX="661.0" layoutY="13.0" minWidth="66.0" mnemonicParsing="false" onAction="#ProductsTab" prefHeight="26.0" text="Товары" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="tableManufacturers" layoutX="744.0" layoutY="47.0" mnemonicParsing="false" onAction="#tableManufacturers" prefHeight="26.0" text="Производители" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="usersTable" layoutX="744.0" layoutY="13.0" mnemonicParsing="false" onAction="#UsersTab" prefHeight="26.0" prefWidth="102.0" text="Пользователи" textAlignment="CENTER" wrapText="true" />
+        <Label layoutX="27.0" layoutY="16.0" text="Другие таблицы:" textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="emailField" layoutX="65.0" layoutY="378.0" prefHeight="25.0" prefWidth="197.0" />
+        <Label layoutX="20.0" layoutY="382.0" prefHeight="17.0" prefWidth="45.0" text="email:" />
+        <TextField fx:id="passwordField" layoutX="347.0" layoutY="378.0" prefHeight="25.0" prefWidth="197.0" />
+        <Label layoutX="280.0" layoutY="382.0" prefHeight="17.0" prefWidth="59.0" text="password:" />
+      <DatePicker fx:id="birthdayPicker" layoutX="369.0" layoutY="456.0" />
+      <Label layoutX="560.0" layoutY="382.0" text="phone:" />
+      <Label layoutX="20.0" layoutY="424.0" prefHeight="17.0" prefWidth="51.0" text="address:" />
+      <Label layoutX="369.0" layoutY="424.0" prefHeight="17.0" prefWidth="59.0" text="full_name:" />
+      <TextField fx:id="numberPhoneField" layoutX="611.0" layoutY="378.0" />
+      <TextField fx:id="addressField" layoutX="81.0" layoutY="420.0" prefHeight="25.0" prefWidth="274.0" />
+      <TextField fx:id="fullNameField" layoutX="436.0" layoutY="420.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="309.0" layoutY="460.0" prefHeight="17.0" prefWidth="59.0" text="birthday:" />
+    </children>
+</Pane>
