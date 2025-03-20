@@ -415,6 +415,31 @@ public class DatabaseManager {
 
         return productsData; // Возвращаем список типа ObservableList<Admins>
     }
+
+    public Products getProductById(int id) {
+        String query = String.format("SELECT * FROM %s.products WHERE id = ?", SCHEMA_NAME);
+
+        try (PreparedStatement statement = connection.prepareStatement(query)) {
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                String name_products = resultSet.getString("name_products");
+                double price = resultSet.getDouble("price");
+                String rating = resultSet.getString("rating");
+                String description = resultSet.getString("description");
+                int category = resultSet.getInt("category");
+                int manufacturers = resultSet.getInt("manufacturer");
+
+                return new Products(id, name_products, price, rating, description, category, manufacturers);
+            }
+        } catch (SQLException e) {
+            System.out.println("Ошибка при получении данных: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 /*
     // Метод для вставки данных в таблицу
     public void insertData(int id, String name_category) {

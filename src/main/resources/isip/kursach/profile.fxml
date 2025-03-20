@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<Pane prefHeight="571.0" prefWidth="400" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isip.kursach.ProfileController">
+<Pane prefHeight="635.0" prefWidth="400" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isip.kursach.ProfileController">
    <!-- Фон -->
-   <Rectangle fill="#f0f0f0" height="571.0" width="400" />
+   <Rectangle fill="#f0f0f0" height="635.0" layoutY="-1.0" width="400" />
 
    <!-- Заголовок -->
    <Label layoutX="140" layoutY="30" text="Профиль">
@@ -43,5 +39,6 @@
    <DatePicker fx:id="birthdayPicker" layoutX="50" layoutY="460" prefHeight="30" prefWidth="300" />
 
    <!-- Кнопка "Изменить" -->
-   <Button layoutX="150" layoutY="510" onAction="#updateProfile" prefHeight="40" prefWidth="100" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;" text="Изменить" />
+   <Button layoutX="150.0" layoutY="507.0" onAction="#updateProfile" prefHeight="40" prefWidth="100" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;" text="Изменить" />
+   <Button layoutX="150.0" layoutY="568.0" onAction="#closeWindow" prefHeight="40" prefWidth="100" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;" text="Назад" />
 </Pane>

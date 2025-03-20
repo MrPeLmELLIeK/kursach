@@ -157,4 +157,10 @@ public class ProfileController {
         this.login = login;
         loadProfileData(login); // Загружаем данные пользователя
     }
+
+    @FXML
+    private void closeWindow() {
+        Stage stage = (Stage) loginField.getScene().getWindow();
+        stage.close(); // Закрываем окно
+    }
 }

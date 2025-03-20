@@ -268,4 +268,6 @@ public class OrdersController {
     public void OrdersTab(ActionEvent event) throws IOException {
         ErrorDialog.showError("Предупреждение!", "Вы и так находитесь в данном окне.");
     }
+
+
 }

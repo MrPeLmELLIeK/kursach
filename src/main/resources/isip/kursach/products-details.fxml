@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="isip.kursach.ProductsDetailsController">
+    <children>
+        <VBox layoutX="10.0" layoutY="10.0" spacing="10">
+            <Label fx:id="idLabel" text="ID: " />
+            <Label fx:id="nameLabel" text="Name: " />
+            <Label fx:id="priceLabel" text="Price: " />
+            <Label fx:id="ratingLabel" text="Rating: " />
+            <Label fx:id="descriptionLabel" text="Description: " />
+            <Label fx:id="categoryLabel" text="Category: " />
+            <Label fx:id="manufacturerLabel" text="Manufacturer: " />
+        </VBox>
+    </children>
+</Pane>
